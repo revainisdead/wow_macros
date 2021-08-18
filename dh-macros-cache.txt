@@ -1,0 +1,51 @@
+VER 3 0100000000000004 "dmg" "INV_MISC_QUESTIONMARK"
+#showtooltip Chaos Blades
+/use Chaos Blades
+/use Nemesis
+/use 14
+END
+VER 3 0100000000000003 "f" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus] Consume Magic
+/cast Consume Magic
+END
+VER 3 0100000000000005 "fkick" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod: shift, @focus] Disrupt
+/cast Disrupt
+END
+VER 3 0100000000000002 "focus" "INV_MISC_QUESTIONMARK"
+#showtooltip Imprison
+/clearfocus [mod:ctrl][target=focus,dead][target=focus,help][target=focus,noexists]
+/cast [mod:shift] Imprison
+/cast [@focus, exists] Imprison
+/focus [target=focus,noexists]
+END
+VER 3 0100000000000006 "i1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1] Imprison
+END
+VER 3 0100000000000007 "i2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2] Imprison
+END
+VER 3 0100000000000008 "i3" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena3] Imprison
+END
+VER 3 0100000000000001 "SA" "INV_MISC_QUESTIONMARK"
+#showtooltip Throw Glaive
+/startattack
+/use 14
+/cast Throw Glaive
+END
+VER 3 0100000000000009 "SA" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Demon's Bite
+END
+VER 3 010000000000000A "stun" "INV_MISC_QUESTIONMARK"
+#showtooltip Fel Eruption
+/cast [mod: shift, target=focus] Fel Eruption
+/cast [nomod] Fel Eruption
+END

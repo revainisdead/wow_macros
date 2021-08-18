@@ -1,0 +1,95 @@
+VER 3 0100000000000032 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Vanish
+/stopattack
+/stopattack
+/cancelaura Subterfuge
+/cast [nostealth] !Vanish
+/cast !Stealth
+END
+VER 3 0100000000000060 "c4" "INV_MISC_QUESTIONMARK"
+#showtooltip Stealth
+-- For some reason, dance keeps you in combat.
+/cancelaura Shadow Dance
+/cast Stealth
+END
+VER 3 010000000000005B "cb" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadowstrike
+/cast Cold Blood
+/cast Shadowstrike
+END
+VER 3 010000000000002F "cf" "INV_MISC_QUESTIONMARK"
+#show Blind
+/clearfocus
+/focus [target=focus,noexists]
+END
+VER 3 0100000000000055 "dance" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Dance
+/use Shadow Dance
+/use Symbols of Death
+/use 13
+END
+VER 3 0100000000000015 "fK" "INV_MISC_QUESTIONMARK"
+#showtooltip Kick
+/cast [mod:shift, target=focus] Kick; Kick
+END
+VER 3 0100000000000045 "fkick" "INV_MISC_QUESTIONMARK"
+#showtooltip
+-- Stance 0: No stance
+-- Stance 1: Stealth
+-- Stance 2: Improved Stealth (Vanish, Dance)
+/castsequence [stance:1, target=focus] reset=2 Shadowstep, Sap
+/castsequence [stance:0/2, target=focus] reset=2 Shadowstep, Kick
+END
+VER 3 0100000000000020 "fsap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@focus] Sap
+END
+VER 3 010000000000005C "fSS" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadowstep
+/cast [@focus] Shadowstep
+END
+VER 3 010000000000005F "Ksap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:0] Kidney Shot
+/cast [stance:1] Sap
+/cast [stance:2] Kidney Shot
+END
+VER 3 0100000000000009 "mut" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nocombat] !Stealth
+/cast [nostealth, combat] Mutilate
+/script UIErrorsFrame:Clear()
+END
+VER 3 0100000000000049 "p1" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadowstep
+--/cast [target=Piddel] Shadowstep
+/cast [target=party1] Shadowstep
+END
+VER 3 0100000000000024 "quick" "INV_MISC_QUESTIONMARK"
+#showtooltip Feint
+/cancelaura [mod:shift] Hand of Protection
+/use Feint
+END
+VER 3 0100000000000042 "sub" "INV_MISC_QUESTIONMARK"
+#shotooltip Backstab
+/dismount
+/cast [nocombat] !Stealth
+/cast [nostealth, combat] Backstab
+END
+VER 3 010000000000005A "swifty" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Dance
+/use Shadow Dance
+/use Shadow Blades
+/use Symbols of Death
+END
+VER 3 0100000000000061 "test" "INV_MISC_QUESTIONMARK"
+/cast Shadowstep
+/cast Sap
+END
+VER 3 0100000000000047 "TotT" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=focus] Tricks of the Trade
+END
+VER 3 010000000000005E "tt" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Blades
+END

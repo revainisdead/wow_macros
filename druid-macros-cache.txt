@@ -1,0 +1,98 @@
+VER 3 010000000000002C " " "INV_MISC_QUESTIONMARK"
+#showtooltip Shred
+/cleartarget
+/targetenemy
+/use [stealth] Shred
+END
+VER 3 010000000000001D " " "Ability_Creature_Cursed_03"
+/targetfriendplayer
+-- Bgs
+END
+VER 3 0100000000000016 " feral" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura Dispersion
+/console autounshift 0
+/cast Healing Touch
+/console autounshift 1
+END
+VER 3 010000000000003B "+" "INV_MISC_QUESTIONMARK"
+#showtooltip Tiger's Fury
+/use 13
+/cast Tiger's Fury
+END
+VER 3 010000000000002F "a1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1] Cyclone
+END
+VER 3 0100000000000030 "a2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2] Cyclone
+END
+VER 3 0100000000000031 "a3" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena3] Cyclone
+END
+VER 3 010000000000003F "ally" "INV_MISC_QUESTIONMARK"
+#showtooltip Wild Charge
+/cancelaura Cat Form
+/target Party1
+/cast Wild Charge
+END
+VER 3 0100000000000019 "blind" "INV_MISC_QUESTIONMARK"
+#showtooltip Mighty Bash
+/clearfocus [modifier:ctrl][target=focus,dead][target=focus,help][target=focus,noexists]
+--/use [mod:shift] Nature's Swiftness
+/use [@focus, ,exists] Mighty Bash
+/focus [target=focus,noexists]
+END
+VER 3 0100000000000039 "dham" "INV_MISC_QUESTIONMARK"
+#showtooltip Incarnation: King of the Jungle
+/use 13
+/cast Tiger's Fury
+/cast Berserk
+/cast Incarnation: King of the Jungle
+END
+VER 3 0100000000000023 "down" "INV_MISC_QUESTIONMARK"
+#showtooltip Remove Corruption
+/use [mod:shift, @party2] Remove Corruption
+/target Endosmoke
+END
+VER 3 0100000000000026 "heals" "INV_MISC_QUESTIONMARK"
+#showtooltip Might of Ursoc
+/use 13
+/use Healthstone
+/use Might of Ursoc
+END
+VER 3 010000000000003E "InCat" "INV_MISC_QUESTIONMARK"
+#showtooltip
+-- Shred must come first
+/cast [stealth] Shred
+/cast [nocombat] !Prowl
+--/cast [nocombat] Prowl
+/cast [combat] Shred
+END
+VER 3 010000000000003A "kitty" "INV_MISC_QUESTIONMARK"
+/cast !Cat Form
+END
+VER 3 010000000000000E "meld" "INV_MISC_QUESTIONMARK"
+#show Shadowmeld
+/stopattack
+/cast [nocombat] !Prowl
+/cast [combat] !Shadowmeld
+END
+VER 3 010000000000003D "OutCat" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [combat] Cat Form
+/cast [nocombat] Prowl
+END
+VER 3 010000000000003C "SA" "INV_MISC_QUESTIONMARK"
+#showtooltip Rake
+/startattack
+/cast Rake
+END
+VER 3 0100000000000021 "up" "INV_MISC_QUESTIONMARK"
+#showtooltip Remove Corruption
+/use [mod:shift, @party1] Remove Corruption
+--/tar party1
+/target Antioch
+END
